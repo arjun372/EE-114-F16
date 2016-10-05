@@ -18,8 +18,8 @@ for k=0:N-1,
     % Note in matlab, 'pi' is 3.14159...
     % The first element of an array is element 1, not 0
     % The next two lines must be completed/fixed
-    real(k+1) = ???;
-    imag(k+1) = ???;
+    real(k+1) = real(k+1) + x(n+1) * cos(-2*pi*k*n/N);
+    imag(k+1) = imag(k+1) + x(n+1) * sin(-2*pi*k*n/N);
   end
 end
 sprintf('finished %d point dft',N)
